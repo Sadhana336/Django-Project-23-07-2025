@@ -3,3 +3,6 @@ from django.http import HttpResponse  #from http you might get response(raw text
 # Create your views here.
 def home(request): #defined function home which receive parameter from http request
     return HttpResponse("Welcome to the ByteBloom Home Page") 
+
+def index(request):
+    return render(request, 'index.html')
